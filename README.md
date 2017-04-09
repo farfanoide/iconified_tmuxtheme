@@ -4,6 +4,14 @@ Iconified Tmux Theme
 Tmux theme designed to show as many icons as possible, because you can never
 have to many of those!
 
+Screenshots:
+------------
+
+![screenshot](https://www.dropbox.com/s/ia3afhrfsylmrnx/iconified_dark.png?dl=1)
+
+More details about features, predefined segments and screenshots can be found at
+the [wiki][] page.
+
 Requirements:
 -------------
 
@@ -47,8 +55,8 @@ set -g @iconified 'light'
  ```
 
 
-
 [tpm]: https://github.com/tmux-plugins/tpm
 [nerd_fonts]: https://github.com/ryanoasis/nerd-fonts
 [battery_script]: https://github.com/farfanoide/dotfiles/blob/master/bin/battery
 [wifi_script]: https://github.com/farfanoide/dotfiles/blob/master/bin/wifi_network
+[wiki]: https://github.com/farfanoide/iconified_tmuxtheme/wiki/Features-and-Screenshots
