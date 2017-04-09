@@ -12,7 +12,6 @@
 # General: ------------------------------------{{{
 
 set -g status on
-set -g utf8 on
 set -g bell-action other
 set -g visual-activity off
 setw -g monitor-activity on
@@ -27,7 +26,7 @@ setw -g window-status-current-fg colour15
 setw -g window-status-current-bg black
 setw -g window-status-activity-bg black
 setw -g window-status-activity-fg white
-set -g window-status-format " #I:#W#{?window_linked, ,}#{?window_zoomed_flag, ,}#{?window_silence_flag, ,}#{?window_last_flag, #[fg=colour15],}#[default]#{?window_activity_flag,#[fg=red] ,} "
+set -g window-status-format " #I:#W#{?window_linked, ,}#{?window_zoomed_flag, ,}#{?window_silence_flag, ,}#{?window_last_flag, #[fg=colour15] ,}#[default]#{?window_activity_flag,#[fg=red] ,} "
 set -g window-status-current-format "#I:#W #{?pane_synchronized, ,}#{?window_zoomed_flag, ,}"
 
 # end windows ---------------------------------}}}
@@ -42,7 +41,7 @@ set -g window-status-current-format "#I:#W #{?pane_synchronized, ,}#{?window_
 # session      :   #S
 # prefix       : #{?client_prefix, #[fg=red], #[fg=green]}
 # window/panes : #I   | #P 
-# clients      : #{?session_many_attached,   #{session_attached} clients attached ,}
+# clients      : #{?session_many_attached,   #{session_attached} clients attached ,}
 # wifi         : #(wifi_network)
 # battery      : #(battery)
 # time         :   %H:%M
@@ -52,7 +51,7 @@ set -g window-status-current-format "#I:#W #{?pane_synchronized, ,}#{?window_
 # end segments --------------------------------}}}
 # Status: -------------------------------------{{{
 
-set -g status-bg black
+set -g status-bg brightblack
 set -g status-fg white
 set -g status-justify centre
 set -g status-interval 2
@@ -63,7 +62,7 @@ set -g status-left-fg white
 set -g status-right-bg black
 set -g status-right-fg white
 
-set -g status-left "   #S #{?client_prefix, #[fg=red], #[fg=green]} #[fg=default] #{?session_many_attached,   #{session_attached} clients attached ,}"
+set -g status-left "   #S #{?client_prefix, #[fg=red], #[fg=green]} #[fg=default] #{?session_many_attached,  #{session_attached},}"
 set -g status-right " #(battery) | #(wifi_network) |   %H:%M |   #h "
 
 # end status ----------------------------------}}}
