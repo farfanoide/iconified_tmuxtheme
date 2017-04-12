@@ -4,12 +4,12 @@ Iconified Tmux Theme
 Tmux theme designed to show as many icons as possible, because you can never
 have to many of those!
 
-Screenshots:
-------------
+Screenshots (more in the [wiki][] page):
+----------------------------------------
 
 ![screenshot](https://www.dropbox.com/s/ia3afhrfsylmrnx/iconified_dark.png?dl=1)
 
-More details about features, predefined segments and screenshots can be found at
+More details about features, predefined segments and screenshots can be found in
 the [wiki][] page.
 
 Requirements:
