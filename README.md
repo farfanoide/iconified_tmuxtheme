@@ -17,7 +17,7 @@ Requirements:
 
 - [Nerd Fonts][nerd_fonts] are required to have basic icons
 - [Wi Fi script][wifi_script]
-- [Battery script][wifi_script]
+- [Battery script][battery_script]
 
 Both Battery and Wi Fi scripts can be any one you like, just make sure they are
 in your `$PATH` and they are called `battery` and `wifi_network` respectively.
@@ -44,16 +44,19 @@ Using [Tmux Plugin Manager][tpm]:
 - Add plugin to the list of TPM plugins in `.tmux.conf` and install it with
  `prefix + I`:
 
-```
+```tmux
 set -g @plugin 'farfanoide/iconified_tmuxtheme'
 ```
 
-- Set the desired flavour in your `~/tmux.conf` (dark is default):
+- Set the desired flavour in your `~/tmux.conf`:
 
  ```tmux
-set -g @iconified 'light'
+set -g @iconified_flavour 'dark'
  ```
 
+> Note that iconified does not load itself by default, so you must set the
+> desired flavour in order for it to work. This is to prevent the theme from
+> automatically loading when the user might want to try another one.
 
 [tpm]: https://github.com/tmux-plugins/tpm
 [nerd_fonts]: https://github.com/ryanoasis/nerd-fonts
