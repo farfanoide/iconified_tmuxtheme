@@ -58,6 +58,20 @@ set -g @iconified_flavour 'dark'
 > desired flavour in order for it to work. This is to prevent the theme from
 > automatically loading when the user might want to try another one.
 
+Configuration:
+--------------
+
+If you installed it using tpm, there are some (still very basic) configuration
+options available, more will come in the future:
+
+Left and right status bar might be configured like so:
+
+```tmux
+set -g @iconified_status_left '#S'
+set -g @iconified_status_right '#h'
+```
+
+
 [tpm]: https://github.com/tmux-plugins/tpm
 [nerd_fonts]: https://github.com/ryanoasis/nerd-fonts
 [battery_script]: https://github.com/farfanoide/dotfiles/blob/master/bin/battery
