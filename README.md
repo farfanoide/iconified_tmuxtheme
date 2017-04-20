@@ -64,7 +64,24 @@ Configuration:
 If you installed it using tpm, there are some (still very basic) configuration
 options available, more will come in the future:
 
-Left and right status bar might be configured like so:
+| configuration option        | changes                                                              |
+| ---------------------       | --------                                                             |
+| @iconified_session_icon     | icon on session segment at start of left status bar                  |
+| @iconified_time_icon        | icon prepended to time segment                                       |
+| @iconified_prefix_sent_icon | icon to show when tmux prefix has been sent                          |
+| @iconified_prefix_icon      | icon when tmux prefix has not been sent (basically most of the time) |
+| @iconified_wifi_script      | name of the wifi script to execute                                   |
+| @iconified_battery_script   | name of the battery script to execute                                |
+| @iconified_hostname_icon    | icon to show next to hostname                                        |
+
+To use them just set the required option on your `~/.tmux.conf`.
+
+```tmux
+# Example to change session icon:
+set -g @iconified_session_icon '[]'
+```
+
+Left and right status bar might be completely changed configured like so:
 
 ```tmux
 set -g @iconified_status_left '#S'
