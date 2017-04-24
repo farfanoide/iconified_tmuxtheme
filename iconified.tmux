@@ -23,7 +23,9 @@ main()
     PREFIX_ICON="$(_iconified_option 'prefix_icon' '')"
     PREFIX_SENT_ICON="$(_iconified_option 'prefix_sent_icon' '')"
     PREFIX_SEGMENT="#{?client_prefix, #[fg=red]${PREFIX_SENT_ICON}, #[fg=green]${PREFIX_ICON}}"
-    CLIENTS_SEGMENT="#{?session_many_attached,  #{session_attached},}"
+
+    CLIENTS_ICON="$(_iconified_option 'clients_icon' ' ')"
+    CLIENTS_SEGMENT="#{?session_many_attached, ${CLIENTS_ICON}#{session_attached},}"
 
     TIME_ICON="$(_iconified_option 'session_icon' " ")"
     TIME_SEGMENT="${TIME_ICON} %H:%M"

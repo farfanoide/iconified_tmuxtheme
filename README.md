@@ -73,6 +73,7 @@ options available, more will come in the future:
 | @iconified_wifi_script      | name of the wifi script to execute                                   |
 | @iconified_battery_script   | name of the battery script to execute                                |
 | @iconified_hostname_icon    | icon to show next to hostname                                        |
+| @iconified_clients_icon     | icon to show next to amount of clients attached to session           |
 
 To use them just set the required option on your `~/.tmux.conf`.
 
