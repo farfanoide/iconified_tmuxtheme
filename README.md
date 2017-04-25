@@ -64,16 +64,22 @@ Configuration:
 If you installed it using tpm, there are some (still very basic) configuration
 options available, more will come in the future:
 
-| configuration option        | changes                                                              |
-| ---------------------       | --------                                                             |
-| @iconified_session_icon     | icon on session segment at start of left status bar                  |
-| @iconified_time_icon        | icon prepended to time segment                                       |
-| @iconified_prefix_sent_icon | icon to show when tmux prefix has been sent                          |
-| @iconified_prefix_icon      | icon when tmux prefix has not been sent (basically most of the time) |
-| @iconified_wifi_script      | name of the wifi script to execute                                   |
-| @iconified_battery_script   | name of the battery script to execute                                |
-| @iconified_hostname_icon    | icon to show next to hostname                                        |
-| @iconified_clients_icon     | icon to show next to amount of clients attached to session           |
+| configuration option            | changes                                                              |
+| ---------------------           | --------                                                             |
+| @iconified_session_icon         | icon on session segment at start of left status bar                  |
+| @iconified_time_icon            | icon prepended to time segment                                       |
+| @iconified_prefix_sent_icon     | icon to show when tmux prefix has been sent                          |
+| @iconified_prefix_icon          | icon when tmux prefix has not been sent (basically most of the time) |
+| @iconified_wifi_script          | name of the wifi script to execute                                   |
+| @iconified_battery_script       | name of the battery script to execute                                |
+| @iconified_hostname_icon        | icon to show next to hostname                                        |
+| @iconified_clients_icon         | icon to show next to amount of clients attached to session           |
+| @iconified_window_linked_icon   | icon to show when window is linked                                   |
+| @iconified_window_zoomed_icon   | icon to show when window is zoomed                                   |
+| @iconified_window_last_icon     | icon to show when window was last visited                            |
+| @iconified_window_silenced_icon | icon to show when window has silence alert                           |
+| @iconified_window_actived_icon  | icon to show when window has activity alert                          |
+| @iconified_pane_sync_icon       | icon to show when panes are synced                                   |
 
 To use them just set the required option on your `~/.tmux.conf`.
 
