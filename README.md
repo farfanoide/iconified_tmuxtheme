@@ -7,7 +7,7 @@ have to many of those!
 Screenshots (more in the [wiki][] page):
 ----------------------------------------
 
-![screenshot](https://www.dropbox.com/s/ia3afhrfsylmrnx/iconified_dark.png?dl=1)
+![screenshot](https://raw.github.com/farfanoide/img/master/iconified_tmuxtheme/dist/iconified_dark.png)
 
 More details about features, predefined segments and screenshots can be found in
 the [wiki][] page.
